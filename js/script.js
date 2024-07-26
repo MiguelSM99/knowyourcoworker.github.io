@@ -124,6 +124,7 @@ $(document).ready(function () {
   });
 
   $(".triggerImage").click(function () {
+    $(".result").text("");
     currentQuestion = 1;
     currentName = $(this).attr("id");
     showQuestion(currentQuestion);
