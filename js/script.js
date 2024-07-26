@@ -28,7 +28,7 @@ $(document).ready(function () {
   const correctAnswersAlex = {
     q1alex: "A una zanahoria",
     q2alex: "Cuando le llama una personita y está 1 minuto hablando",
-    q3alex: "Jon, de Booking",
+    q3alex: "Gina, de Booking",
     q4alex: "Todas son correctas",
     q5alex: "Pablo",
   };
