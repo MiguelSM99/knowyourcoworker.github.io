@@ -1,0 +1,123 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    height: 100%;
+    overflow: hidden;
+}
+#ayshaDiv, #andreaDiv, #adrianDiv, #alexDiv, #miguelDiv {
+    width: 0;
+    height: 0;
+    background-color: lightblue;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bacckButton {
+    display: block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+.containerr {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.question {
+    display: none;
+    font-size: 17pt;
+}
+
+.unlock {
+    display: none;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.fullscreen-div {
+    display: none;
+    position: relative;
+    width: 100vw; /* viewport width */
+    height: 100vh; /* viewport height */
+    overflow: show; /* hide the overflow */
+  }
+  
+  .background-image {
+    background: url('https://cdn.vectorstock.com/i/500p/14/24/cosmic-space-sky-with-stars-background-vector-10171424.jpg') repeat 0 0; /* replace 'path-to-your-image.jpg' with the path to your image */
+    width: 200%; /* make the background image twice as wide as the div */
+    height: 100%;
+    animation: moveBackground 200s linear infinite; /* animate the background image */
+  }
+
+  /* This applies to all scrollable elements */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  .centered-text {
+    background-color: black;
+    opacity: 0.7;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 80%;
+    overflow-y: scroll;
+    transform: translate(-50%, -50%); /* center the text */
+    text-align: center;
+    color: white;
+  }
+  
+  @keyframes moveBackground {
+    from { background-position: 0 0; }
+    to { background-position: -100% 0; }
+  }
+
+  .backButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .backButton:hover {
+    background-color: #0056b3;
+  }

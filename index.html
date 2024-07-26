@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnowYourCoWorker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center p-3">Bienvenido a "KnowYourCoWorker"</h1>
+    </header>
+    <div class="container text-center p-4">
+        <h3>¿En qué consiste?</h3>
+    </div>
+    <div class="description">
+        <p class="h5 p-3 container">KnowYourCoWorker es una aplicación web que te permite desbloquear historias de tus
+            compañeros de
+            trabajo en base a los conocimientos del autor de la web sobre ellos.
+            En dichas historias podrás ver diferentes cualidades de dichos trabajadores así como divertidas referencias.
+            <span class="text-info">¡Pruébalo seleccionando uno de los trabajadores bloqueados para
+                desbloquearlos!</span>
+        </p>
+        <div class="characters">
+            <div class="row text-center d-flex justify-content-center">
+                <div class="col-2 col">
+                    <img id="aysha" class="triggerImage w-100 h-100" src="images/aysha_putin.jpeg">
+                </div>
+                <div class="col-2 col">
+                    <img id="andrea" class="triggerImage w-100 h-100" src="images/andrea_messa.jpeg">
+                </div>
+                <div class="col-2 col">
+                    <img id="adrian" class="triggerImage w-100 h-100" src="images/adrian_cucaracha.jpeg">
+                </div>
+                <div class="col-2 col">
+                    <img id="alex" class="triggerImage w-100 h-100" src="images/alex_cullen.jpeg">
+                </div>
+                <div class="col-2 col">
+                    <img id="miguel" class="triggerImage w-100 h-100" src="images/miguel_britney.png">
+                </div>
+            </div>
+        </div>
+        <div id="ayshaDiv" class="charactersExpand justify-content-center float-left flex-column">
+            <div class="containerr containeraysha">
+                <div class="question text-left" id="questionaysha1">
+                    <p class="h4 text-bold text-center">Pregunta 1: ¿Cual es el nombre y apellido de ésta persona?</p>
+                    <input type="radio" name="q1aysha" value="Aichad Gandarova"> Aisha Gandarova<br>
+                    <input type="radio" name="q1aysha" value="Ayxa Agandarova"> Ayxa Agandarova<br>
+                    <input type="radio" name="q1aysha" value="Aychad Andarova"> Aychad Andarova<br>
+                    <input type="radio" name="q1aysha" value="Aysha Gandarova"> Aysha Gandarova<br>
+                </div>
+                <div class="question text-left" id="questionaysha2">
+                    <p class="h4 text-bold text-center">Pregunta 2: ¿Ésta persona tiene carné de conducir?</p>
+                    <input type="radio" name="q2aysha" value="Si"> Si<br>
+                    <input type="radio" name="q2aysha" value="No"> No<br>
+                    <input type="radio" name="q2aysha" value="Si pero sólo para botes"> Si pero sólo para botes<br>
+                    <input type="radio" name="q2aysha" value="Sí pero sólo en Fortnite"> Sí pero sólo en Fortnite<br>
+                </div>
+                <div class="question text-left" id="questionaysha3">
+                    <p class="h4 text-bold text-center">Pregunta 3: ¿Qué artistas escucha ésta persona?</p>
+                    <input type="radio" name="q3aysha" value="Taylor, Travis, Drake y NF"> Taylor, Travis, Drake y
+                    NF<br>
+                    <input type="radio" name="q3aysha" value="Drake, Taylor, Travis y Don Toliver"> Drake, Taylor,
+                    Travis y Don Toliver<br>
+                    <input type="radio" name="q3aysha" value="Taylor, Jojo Siwa, Don Toliver y Britney"> Taylor, Jojo
+                    Siwa, Don Toliver y Britney<br>
+                    <input type="radio" name="q3aysha" value="Travis, Don Toliver, Taylor y Kendrick"> Travis, Don
+                    Toliver, Taylor y Kendrick<br>
+                    <input type="radio" name="q3aysha" value="La 2 y la 4 son correctas"> La 2 y la 4 son correctas<br>
+                </div>
+                <div class="question text-left" id="questionaysha4">
+                    <p class="h4 text-bold text-center">Pregunta 4: En los últimos meses, ¿cuántas veces ha repetido "de
+                        hecho"?</p>
+                    <input type="radio" name="q4aysha" value="Entre 1 y 10"> Entre 1 y 10<br>
+                    <input type="radio" name="q4aysha" value="Entre 11 y 25"> Entre 11 y 25<br>
+                    <input type="radio" name="q4aysha" value="Entre 26 y 50"> Entre 26 y 50<br>
+                    <input type="radio" name="q4aysha" value="Entre 51 y 782"> Entre 51 y 782<br>
+                </div>
+                <div class="question text-left" id="questionaysha5">
+                    <p class="h4 text-bold text-center">Pregunta 5: ¿Ésta persona está casada?</p>
+                    <input type="radio" name="q5aysha" value="Sí"> Sí<br>
+                    <input type="radio" name="q5aysha" value="Sí y además pendiente de vacaciones con su cónyuge"> Sí y
+                    además pendiente de vacaciones con su cónyuge<br>
+                    <input type="radio" name="q5aysha" value="No"> No<br>
+                </div>
+                <button class="previous">Previous</button>
+                <button class="next">Next</button>
+                <button class="unlock">Unlock</button>
+                <div class="result"></div>
+            </div>
+            <button id="backButtonaysha" class="bacckButton">Back</button>
+        </div>
+        <div id="andreaDiv" class="charactersExpand justify-content-center float-left flex-column">
+            <div class="containerr containerandrea">
+                <div class="question text-left" id="questionandrea1">
+                    <p class="h4 text-bold text-center">Pregunta 1: ¿Qué tipo de ejercicio realiza ésta persona?</p>
+                    <input type="radio" name="q1andrea" value="Pilates"> Pilates<br>
+                    <input type="radio" name="q1andrea" value="Natación sincronizada"> Natación sincronizada<br>
+                    <input type="radio" name="q1andrea" value="Dormir"> Dormir<br>
+                    <input type="radio" name="q1andrea" value="Tenis"> Tenis<br>
+                    <input type="radio" name="q1andrea" value="La 1 y la 3 son correctas"> La 1 y la 3 son correctas<br>
+                </div>
+                <div class="question text-left" id="questionandrea2">
+                    <p class="h4 text-bold text-center">Pregunta 2: ¿Quién es el crush de ésta persona?</p>
+                    <input type="radio" name="q2andrea" value="Chico misterioso de ApiAddicts"> Chico misterioso de
+                    ApiAddicts<br>
+                    <input type="radio" name="q2andrea" value="Troy Bolton"> Troy Bolton<br>
+                    <input type="radio" name="q2andrea" value="Morgan Freeman"> Morgan Freeman<br>
+                    <input type="radio" name="q2andrea" value="Jim Carrey"> Jim Carrey<br>
+                    <input type="radio" name="q2andrea" value="La 1 y la 2 son correctas"> La 1 y la 2 son correctas<br>
+                </div>
+                <div class="question text-left" id="questionandrea3">
+                    <p class="h4 text-bold text-center">Pregunta 3: ¿A dónde ha ido/irá a ver a Taylor Swift ésta
+                        persona?</p>
+                    <input type="radio" name="q3andrea" value="Madrid"> Madrid<br>
+                    <input type="radio" name="q3andrea" value="China"> China<br>
+                    <input type="radio" name="q3andrea" value="Cáceres"> Cáceres<br>
+                    <input type="radio" name="q3andrea" value="Vienna"> Vienna<br>
+                    <input type="radio" name="q3andrea" value="Milán"> Milán<br>
+                </div>
+                <div class="question text-left" id="questionandrea4">
+                    <p class="h4 text-bold text-center">Pregunta 4: ¿Qué desayuno le gustaría tener a ésta persona?</p>
+                    <input type="radio" name="q4andrea" value="Un cafe"> Un cafe<br>
+                    <input type="radio" name="q4andrea" value="Algo dulce, como un bizcocho"> Algo dulce, como un
+                    bizcocho<br>
+                    <input type="radio" name="q4andrea" value="Croquetas"> Croquetas<br>
+                    <input type="radio" name="q4andrea" value="Todas son correctas"> Todas son correctas<br>
+                </div>
+                <div class="question text-left" id="questionandrea5">
+                    <p class="h4 text-bold text-center">Pregunta 5: ¿Ésta persona está casada?</p>
+                    <input type="radio" name="q5andrea" value="Sí"> Sí<br>
+                    <input type="radio" name="q5andrea" value="Sí y además pendiente de vacaciones con su cónyuge"> Sí y
+                    además pendiente de vacaciones con su cónyuge<br>
+                    <input type="radio" name="q5andrea" value="No"> No<br>
+                </div>
+                <button class="previous">Previous</button>
+                <button class="next">Next</button>
+                <button class="unlock">Unlock</button>
+                <div class="result"></div>
+            </div>
+            <button id="backButtonandrea" class="bacckButton">Back</button>
+        </div>
+        <div id="adrianDiv" class="charactersExpand justify-content-center float-left flex-column">
+            <div class="containerr containeradrian">
+                <div class="question text-left" id="questionadrian1">
+                    <p class="h4 text-bold text-center">Pregunta 1: ¿Qué tipo de ser vivo es ésta persona?</p>
+                    <input type="radio" name="q1adrian" value="Cucaracha"> Cucaracha<br>
+                    <input type="radio" name="q1adrian" value="Rata"> Rata<br>
+                    <input type="radio" name="q1adrian" value="Humano"> Humano<br>
+                    <input type="radio" name="q1adrian" value="Planta"> Planta<br>
+                    <input type="radio" name="q1adrian" value="Todas son correctas"> Todas son correctas<br>
+                </div>
+                <div class="question text-left" id="questionadrian2">
+                    <p class="h4 text-bold text-center">Pregunta 2: ¿Qué medallon prefiere en Fortnite?</p>
+                    <input type="radio" name="q2adrian" value="Escudo"> Escudo<br>
+                    <input type="radio" name="q2adrian" value="Munición infinita"> Munición infinita<br>
+                    <input type="radio" name="q2adrian" value="Nitro"> Nitro<br>
+                </div>
+                <div class="question text-left" id="questionadrian3">
+                    <p class="h4 text-bold text-center">Pregunta 3: ¿Tiene buen gusto musical?</p>
+                    <input type="radio" name="q3adrian" value="No"> No<br>
+                    <input type="radio" name="q3adrian" value="Si"> Si<br>
+                    <input type="radio" name="q3adrian" value="Si, pero está empezando a tenerlo ahora"> Sí, pero está
+                    empezando a tenerlo ahora<br>
+                </div>
+                <div class="question text-left" id="questionadrian4">
+                    <p class="h4 text-bold text-center">Pregunta 4: ¿De qué se nutre ésta persona?</p>
+                    <input type="radio" name="q4adrian" value="Un cafèèè"> Un cafèèè<br>
+                    <input type="radio" name="q4adrian" value="Monster Energy"> Monster Energy<br>
+                    <input type="radio" name="q4adrian" value="Té"> Té<br>
+                    <input type="radio" name="q4adrian" value="El Sol"> Sol<br>
+                </div>
+                <div class="question text-left" id="questionadrian5">
+                    <p class="h4 text-bold text-center">Pregunta 5: ¿Cual ha sido uno de sus rages (enfados) cuando era
+                        mucho más joven?</p>
+                    <input type="radio" name="q5adrian" value="Llorar y decir 'caspitas'"> Llorar y decir 'caspitas'<br>
+                    <input type="radio" name="q5adrian" value="Insultar pero luego pedir perdón"> Insultar pero luego
+                    pedir perdón<br>
+                    <input type="radio" name="q5adrian" value="Reventar un monitor"> Reventar un monitor<br>
+                </div>
+                <button class="previous">Previous</button>
+                <button class="next">Next</button>
+                <button class="unlock">Unlock</button>
+                <div class="result"></div>
+            </div>
+            <button id="backButtonadrian" class="bacckButton">Back</button>
+        </div>
+        <div id="alexDiv" class="charactersExpand justify-content-center float-left flex-column">
+            <div class="containerr containeralex">
+                <div class="question text-left" id="questionalex1">
+                    <p class="h4 text-bold text-center">Pregunta 1: ¿A qué color se asemeja más ésta persona?</p>
+                    <input type="radio" name="q1alex" value="A una zanahoria"> A una zanahoria<br>
+                    <input type="radio" name="q1alex" value="A un conguito"> A un conguito<br>
+                    <input type="radio" name="q1alex" value="A un donut"> A un donut<br>
+                    <input type="radio" name="q1alex" value="A un espárrago"> A un espárrago<br>
+                </div>
+                <div class="question text-left" id="questionalex2">
+                    <p class="h4 text-bold text-center">Pregunta 2: ¿Cuando se silencia ésta persona cuando juega?</p>
+                    <input type="radio" name="q2alex" value="Cuando está leyendo la biblia"> Cuando está leyendo la
+                    biblia<br>
+                    <input type="radio" name="q2alex" value="Cuando habla con su padre durante 4 horas"> Cuando habla
+                    con su padre durante 4 horas<br>
+                    <input type="radio" name="q2alex" value="Cuando habla con su hermano durante 5 días hábiles"> Cuando
+                    habla con su hermano durante 5 días hábiles<br>
+                    <input type="radio" name="q2alex" value="Cuando le llama una personita y está 1 minuto hablando">
+                    Cuando le llama una personita y está 1 minuto hablando<br>
+                </div>
+                <div class="question text-left" id="questionalex3">
+                    <p class="h4 text-bold text-center">Pregunta 3: ¿Quién es su mejor amigo?</p>
+                    <input type="radio" name="q3alex" value="Miguel"> Miguel<br>
+                    <input type="radio" name="q3alex" value="Adrian"> Adrian<br>
+                    <input type="radio" name="q3alex" value="Xieli"> Xieli<br>
+                    <input type="radio" name="q3alex" value="Jon, de Booking"> Jon, de Booking<br>
+                </div>
+                <div class="question text-left" id="questionalex4">
+                    <p class="h4 text-bold text-center">Pregunta 4: ¿Con qué numeros puede hacer rimas?</p>
+                    <input type="radio" name="q4alex" value="El 13"> El 13<br>
+                    <input type="radio" name="q4alex" value="El 4"> El 4<br>
+                    <input type="radio" name="q4alex" value="El 5"> El 5<br>
+                    <input type="radio" name="q4alex" value="El 7"> El 7<br>
+                    <input type="radio" name="q4alex" value="Todas son correctas"> Todas son correctas<br>
+
+                </div>
+                <div class="question text-left" id="questionalex5">
+                    <p class="h4 text-bold text-center">Pregunta 5: ¿A quién le robó el bocata?</p>
+                    <input type="radio" name="q5alex" value="Pablo"> Pablo<br>
+                    <input type="radio" name="q5alex" value="Benet"> Benet<br>
+                    <input type="radio" name="q5alex" value="Adrian Suarez"> Adrian Suarez<br>
+                    <input type="radio" name="q5alex" value="A nadie, él no roba"> A nadie, él no roba<br>
+                </div>
+                <button class="previous">Previous</button>
+                <button class="next">Next</button>
+                <button class="unlock">Unlock</button>
+                <div class="result"></div>
+            </div>
+            <button id="backButtonalex" class="bacckButton">Back</button>
+        </div>
+    </div>
+    <div id="miguelDiv" class="charactersExpand justify-content-center float-left flex-column">
+        <div class="containerr containermiguel">
+            <div class="question text-left" id="questionmiguel1">
+                <p class="h4 text-bold text-center">Pregunta 1: ¿Qué mote tiene ésta persona?</p>
+                <input type="radio" name="q1miguel" value="Miguala"> Miguala<br>
+                <input type="radio" name="q1miguel" value="Migui"> Migui<br>
+                <input type="radio" name="q1miguel" value="Migual"> Migual<br>
+                <input type="radio" name="q1miguel" value="Miguilla"> Miguilla<br>
+                <input type="radio" name="q1miguel" value="2 y 3 son correctas"> 2 y 3 son correctas<br>
+            </div>
+            <div class="question text-left" id="questionmiguel2">
+                <p class="h4 text-bold text-center">Pregunta 2: ¿Qué tipo de manta tiene ésta persona en su casa?</p>
+                <input type="radio" name="q2miguel" value="Una lechuga"> Una lechuga<br>
+                <input type="radio" name="q2miguel" value="Una salchicha"> Una salchicha<br>
+                <input type="radio" name="q2miguel" value="Un burrito"> Un burrito<br>
+                <input type="radio" name="q2miguel" value="Un taco"> Un taco<br>
+            </div>
+            <div class="question text-left" id="questionmiguel3">
+                <p class="h4 text-bold text-center">Pregunta 3: ¿Dónde ha estado reciéntemente ésta persona?</p>
+                <input type="radio" name="q3miguel" value="Alicante"> Alicante<br>
+                <input type="radio" name="q3miguel" value="Milan"> Milan<br>
+                <input type="radio" name="q3miguel" value="Barcelona"> Barcelona<br>
+                <input type="radio" name="q3miguel" value="Asturias"> Asturias<br>
+                <input type="radio" name="q3miguel" value="1 y 2 son correctas"> 1 y 2 son correctas<br>
+            </div>
+            <div class="question text-left" id="questionmiguel4">
+                <p class="h4 text-bold text-center">Pregunta 4: ¿Cuando juega, a qué personaje de fantasía se asemeja?
+                </p>
+                <input type="radio" name="q4miguel" value="Robin Hood"> Robin Hood<br>
+                <input type="radio" name="q4miguel" value="Batman"> Batman<br>
+                <input type="radio" name="q4miguel" value="Superman"> Superman<br>
+                <input type="radio" name="q4miguel" value="Harley Quinn"> Harley Quinn<br>
+            </div>
+            <div class="question text-left" id="questionmiguel5">
+                <p class="h4 text-bold text-center">Pregunta 5: ¿Qué zona tiene afectada ésta persona?</p>
+                <input type="radio" name="q5miguel" value="Cervical izquierda"> Cervical izquierda<br>
+                <input type="radio" name="q5miguel" value="Cervical derecha"> Cervical derecha<br>
+                <input type="radio" name="q5miguel" value="Lumbar izquierda"> Lumbar izquierda<br>
+                <input type="radio" name="q5miguel" value="Lumbar derecha"> Lumbar derecha<br>
+            </div>
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+            <button class="unlock">Unlock</button>
+            <div class="result"></div>
+        </div>
+        <button id="backButtonmiguel" class="bacckButton">Back</button>
+    </div>
+    <div id="storyaysha" class="fullscreen-div">
+        <div class="background-image">
+            <div class="centered-text">
+                <h2>Aysha y el Reino de los Códigos Encantados</h2>
+                En un rincón del vasto y helado paisaje ruso, en una pequeña ciudad llamada Kirovsk, vivía una chica
+                extraordinaria llamada Aysha. Desde temprana edad, Aysha mostró un talento innato para la programación,
+                siendo capaz de resolver problemas complejos con una facilidad asombrosa. Sin embargo, lo que realmente
+                la hacía destacar no era solo su habilidad con los códigos, sino su corazón cálido y su espíritu
+                generoso.
+
+                </br></br></br>Aysha tenía una habilidad especial para hacer amigos. Siempre que alguien estaba triste o
+                desanimado, Aysha sabía exactamente qué decir para animarlos. Tenía una risa contagiosa y un sentido del
+                humor encantador, que la convertía en el alma de cualquier reunión. Le gustaba hacer bromas a sus
+                amigos, como cambiar el fondo de pantalla de sus computadoras a imágenes graciosas de gatos rusos, pero
+                todos sabían que lo hacía con cariño y disfrutaban de su travesura.
+
+                </br></br></br>Además de su pasión por la programación, Aysha tenía otra gran afición: jugar a Fortnite.
+                Era conocida en la comunidad de jugadores como una estratega brillante y una compañera de equipo
+                invaluable. Sus amigos en el juego la admiraban no solo por su habilidad, sino también por su
+                disposición a ayudar a los novatos y a enseñarles trucos y tácticas para mejorar.
+
+                Una noche de invierno, mientras Aysha jugaba una partida intensa de Fortnite, recibió un mensaje urgente
+                en su computadora. Era un viejo amigo programador que había encontrado un misterioso archivo en una
+                antigua base de datos rusa. El archivo contenía un código que, según las leyendas, podía abrir un portal
+                a un reino encantado donde el tiempo se detenía y los deseos más profundos se podían hacer realidad.
+
+                Intrigada, Aysha decidió investigar. </br></br></br>Trabajó incansablemente, descifrando el código y
+                descubriendo sus secretos ocultos. Con cada línea de código que desenmarañaba, sentía que se acercaba
+                más a algo grandioso. Finalmente, después de días de trabajo, logró activar el portal.
+
+                Con una mezcla de emoción y nervios, Aysha cruzó el portal y se encontró en el Reino de los Códigos
+                Encantados, un lugar de belleza indescriptible y magia pura. Allí, los árboles brillaban con luces de
+                neón y los ríos fluían con datos binarios que reflejaban el conocimiento del universo.
+
+                Los habitantes del reino, seres hechos de pura energía digital, recibieron a Aysha con los brazos
+                abiertos. Le contaron que habían estado esperando a alguien como ella, una persona excepcional, para
+                ayudarlos a resolver un antiguo conflicto que amenazaba con desestabilizar su mundo.
+
+                Aysha aceptó el desafío con su habitual entusiasmo y determinación. </br></br></br>Utilizando su ingenio
+                y su bondad, trabajó junto a los habitantes del reino para restaurar el equilibrio. Durante su estancia,
+                hizo muchos amigos nuevos y se convirtió en una leyenda entre los seres digitales.
+
+                Cuando finalmente regresó a su mundo, Aysha trajo consigo no solo recuerdos de una aventura inolvidable,
+                sino también un profundo sentido de gratitud y una mayor comprensión del poder de la amabilidad y la
+                colaboración. Aunque continuó jugando a Fortnite y haciendo bromas a sus amigos, aquellos que conocieron
+                su historia sabían que había algo especial en ella, una chispa de magia que solo unos pocos poseen.
+
+                Así, la leyenda de Aysha, la programadora rusa de corazón cálido, continuó inspirando a todos los que la
+                conocían, recordándoles que, con bondad y determinación, cualquier cosa es posible, incluso abrir
+                portales a reinos encantados.
+            </div>
+            <button class="backButton" style="position: absolute; top: 10px; right: 10px;">Back</button>
+        </div>
+    </div>
+    <div id="storyandrea" class="fullscreen-div">
+        <div class="background-image">
+            <div class="centered-text">
+                <h2>La Magia de las Croquetas: La Aventura de Andrea y Troy</h2>
+                Había una vez en un pequeño y pintoresco pueblo, una joven llamada Andrea. A sus 24 años, Andrea era
+                conocida por su actitud radiante y graciosa, y por la extraña pero entrañable costumbre de comportarse
+                como una abuela. No había persona en el pueblo que no adorara a Andrea por su habilidad de llenar
+                cualquier habitación con risas y un cálido sentido de nostalgia.
+
+            </br></br></br>Andrea tenía una pasión inusual: las croquetas. No solo le encantaba comerlas, sino que también había
+                perfeccionado el arte de hacerlas. Sus croquetas eran tan deliciosas que se decía que tenían propiedades
+                mágicas. Algunos afirmaban que podían curar el mal de amores, mientras que otros juraban que, después de
+                comerlas, habían tenido los sueños más maravillosos.
+
+            </br></br></br>Una noche, mientras Andrea preparaba una nueva tanda de croquetas en su acogedora cocina, algo increíble
+                ocurrió. Una luz brillante llenó la habitación y, de la nada, apareció Troy Bolton, el ídolo de "High
+                School Musical". Troy, con su encantadora sonrisa y su energía desbordante, le explicó a Andrea que
+                había sido transportado mágicamente a su cocina debido al poder especial de sus croquetas.
+
+            </br></br></br>Andrea, incrédula pero emocionada, ofreció a Troy una croqueta. Al morderla, Troy quedó maravillado por
+                el sabor y le confesó que estaba en una misión muy especial. Había sido enviado por una antigua orden
+                secreta de chefs místicos para encontrar la receta perfecta de croquetas que pudiera salvar al mundo del
+                aburrimiento culinario.
+
+                Andrea, con su habitual actitud de abuela, le dijo a Troy: "¡Ay, muchacho! Qué cosas tan raras te pasan,
+                pero aquí estoy para ayudarte." Juntos, comenzaron a experimentar con diferentes ingredientes, buscando
+                crear la croqueta definitiva.
+
+            </br></br></br>Mientras tanto, la madre de Andrea, una dedicada enfermera, volvía del hospital después de un largo
+                turno. Ella tenía sus propias historias increíbles, una de las más notables era la de un legendario
+                programador al que había atendido. Este programador, según contaban, se convertía en un burrito de vez
+                en cuando, debido a un extraño hechizo que había caído sobre él durante una noche de programación
+                extrema.
+
+                Con su naturaleza bondadosa y compasiva, había cuidado del programador-burrito con esmero, asegurándose
+                de que estuviera sano y salvo cada vez que volvía a su forma humana. La historia del programador-burrito
+                se había convertido en una leyenda en el hospital, y la madre de Andrea era respetada no solo por su
+                habilidad médica sino también por su valentía al enfrentar lo sobrenatural.
+
+                De vuelta en la cocina, Andrea y Troy finalmente dieron con la receta perfecta. Las croquetas brillaban
+                con un resplandor dorado, y al probarlas, ambos sintieron una ola de felicidad pura. Justo en ese
+                momento, la madre de Andrea entró en la cocina y, al ver a Troy Bolton y las croquetas mágicas, sonrió y
+                dijo: "Andrea, querida, parece que tu vida es aún más emocionante que la mía."
+
+            </br></br></br>Andrea y Troy sabían que debían compartir su creación con el mundo. Así que, juntos, emprendieron un
+                viaje para llevar las croquetas mágicas a cada rincón del planeta. Y así, gracias a una chica radiante
+                con alma de abuela, un héroe de musicales y una madre enfermera con historias increíbles, el mundo se
+                llenó de alegría y sabor, un croqueta a la vez.
+
+                Y aunque suene increíble, esta historia se cuenta cada noche en el pequeño pueblo, recordando a todos
+                que lo imposible puede volverse posible con un poco de magia, bondad y, por supuesto, croquetas
+                deliciosas.
+            </div>
+        </div>
+        <button class="backButton" style="position: absolute; top: 10px; right: 10px;">Back</button>
+    </div>
+    <div id="storyadrian" class="fullscreen-div">
+        <div class="background-image">
+            <div class="centered-text">
+                <h2>La Leyenda de Adrián, el Jugador Solitario</h2>
+                En un reino digital conocido como el Mundo de Fortnite, donde las batallas eran intensas y los desafíos
+                infinitos, vivía un joven llamado Adrián. Adrián era un maestro del juego, un verdadero prodigio en el
+                arte de Fortnite. Sus habilidades eran tan impresionantes que muchos decían que jugaba como una
+                cucaracha, siempre encontrando la manera de sobrevivir y evadir el peligro en las situaciones más
+                difíciles.
+
+            </br></br></br>A pesar de su destreza, Adrián tenía un problema: era un solitario. En cada partida, dejaba de lado a
+                sus compañeros de equipo, y su sed de coronas lo llevaba a perseguir al jefe del juego, ignorando las
+                necesidades de los demás. Sus compañeros, una chica rusa cuyo nombre se había perdido en las batallas, y
+                un jugador misterioso conocido solo por su voz en el chat, se sentían abandonados. A veces, Adrián
+                incluso soltaba insultos sin querer, lo que hacía aún más difícil la reconciliación.
+
+            </br></br></br>Adrián era conocido por ser un "parguel", una mezcla de gran habilidad y falta de consideración por el
+                equipo. Su obsesión por ganar lo hacía olvidarse de la amistad y el trabajo en equipo. Sus compañeros,
+                aunque frustrados, no querían perder la esperanza de que Adrián pudiera cambiar.
+
+            </br></br></br>Un día, después de una partida particularmente tensa, la chica rusa decidió hablar con Adrián. "Ты
+                должен играть с нами, а не против нас" le dijo, esperando que sus palabras penetraran el muro de
+                concentración que Adrián siempre tenía puesto. Adrián, en su intento torpe, trató de responder en ruso,
+                pero sus palabras salieron mal, causando más risas que entendimiento. Sin embargo, el esfuerzo fue
+                apreciado.
+
+                El jugador misterioso, conocido por su voz grave y su paciencia infinita, también habló. "Adrián, debes
+                aprender a jugar en equipo. Nadie quiere seguir jugando con alguien que no los respeta."
+
+                Estas palabras resonaron en Adrián. Por primera vez, se dio cuenta de cuánto había herido a sus amigos.
+                Decidió que debía cambiar, y empezó a hacer pequeños esfuerzos para mejorar. Comenzó a cubrir a sus
+                compañeros en las batallas, a compartir recursos y, sobre todo, a intentar comunicarse mejor, aunque sus
+                intentos de ruso seguían siendo motivo de risas.
+
+            </br></br></br>El camino no fue fácil. Adrián seguía teniendo la tentación de ir tras el jefe solo, pero sus amigos,
+                con paciencia y comprensión, le ayudaron a recordar la importancia del equipo. Poco a poco, Adrián
+                aprendió a equilibrar su ambición con la amistad, a respetar a sus compañeros y a trabajar juntos hacia
+                la victoria.
+
+                Con el tiempo, las heridas sanaron y la confianza se reconstruyó. Adrián dejó de ser el solitario
+                "parguel" y se convirtió en un verdadero compañero de equipo. Las victorias, aunque menos frecuentes que
+                cuando jugaba solo, eran mucho más satisfactorias, llenas de risas y camaradería.
+
+            </br></br></br>Así, en el Mundo de Fortnite, Adrián, la chica rusa y el jugador misterioso volvieron a ser un equipo
+                unido, demostrando que la amistad y la colaboración siempre son más valiosas que las victorias
+                individuales. La leyenda de Adrián, el jugador que aprendió a valorar a sus amigos, se extendió por todo
+                el reino digital, inspirando a otros a seguir su ejemplo y a jugar no solo por la victoria, sino por la
+                alegría de compartirla con otros.
+            </div>
+            <button class="backButton" style="position: absolute; top: 10px; right: 10px;">Back</button>
+        </div>
+    </div>
+    <div id="storyalex" class="fullscreen-div">
+        <div class="background-image">
+            <div class="centered-text">
+                <h2>La Fuente de la Dulzura: La Leyenda de Alex el Pelirrojo</h2>
+                En un pequeño pueblo escondido entre las montañas y rodeado de densos bosques, vivía un chico llamado
+                Alex. Su cabello era de un vibrante color rojo, como el atardecer más brillante, lo que le hacía
+                destacar entre los demás habitantes. Pero no solo su cabellera era especial, sino también su corazón y
+                su espíritu.
+
+            </br></br></br>Alex tenía un don innato para encontrar la dulzura en cada rincón de la vida. Aunque nunca hablaba de
+                golosinas ni manjares, sus amigos sabían que en su mundo, las pequeñas alegrías y los momentos felices
+                eran su mayor deleite. Siempre se le veía con una sonrisa suave, y sus ojos brillaban con una luz
+                especial cada vez que lograba compartir una risa o un momento tierno con quienes lo rodeaban.
+
+                Una tarde, mientras caminaba por el bosque en busca de la dulzura que tanto amaba, Alex se encontró con
+                un extraño brillo entre los árboles. Curioso y con el corazón lleno de expectación, siguió el resplandor
+                hasta llegar a un claro donde se encontraba una antigua fuente, olvidada por el tiempo. El agua de la
+                fuente parecía estar hecha de luz líquida, y emanaba una sensación de calidez y paz.
+
+                Alex se acercó, sintiendo que este descubrimiento estaba destinado solo para él. Al tocar el agua, una
+                voz susurrante le habló desde lo profundo de la fuente. "Has encontrado la Fuente de la Dulzura Eterna,"
+                dijo la voz. "Aquí, la esencia de todo lo dulce en el mundo se concentra. Eres digno de este lugar por
+                tu corazón puro y tu amor por los momentos dulces de la vida."
+
+            </br></br></br>Cada vez que Alex regresaba al pueblo, traía consigo un poco de esa dulzura, no en forma de objetos
+                tangibles, sino en el brillo de sus ojos y la suavidad de sus palabras. La gente no sabía de dónde
+                provenía su renovada energía y alegría, pero todos sentían la calidez que irradiaba a su alrededor.
+
+                Gran parte de su amabilidad y paciencia se las debía a su mejor amigo Jon, un informático prodigio. Jon
+                siempre encontraba soluciones a los problemas más complejos con una facilidad impresionante, y su calma
+                y lógica habían influido mucho en Alex. Aprendió de Jon la importancia de estar presente para los demás
+                y de la dulzura que se puede encontrar incluso en los desafíos más difíciles.
+
+                Sin embargo, había algo más que lo distinguía. Alex hablaba con una voz tan baja y suave que parecía un
+                susurro. Sus palabras eran como una brisa ligera que apenas rozaba los oídos, pero cada una de ellas
+                estaba cargada de significado y cariño. Esta forma de hablar hacía que quienes lo escuchaban tuvieran
+                que detenerse y prestarle toda su atención, creando un vínculo especial y profundo entre él y sus
+                interlocutores.
+
+            </br></br></br>Así, Alex, el chico pelirrojo de voz suave, se convirtió en una leyenda viva en su pueblo. Su amor por
+                la dulzura y su habilidad para encontrar y compartir la esencia de los momentos más tiernos y felices,
+                influenciado por la sabiduría de su amigo Jon, lo hicieron una luz constante en la vida de todos los que
+                lo conocieron.
+            </div>
+            <button class="backButton" style="position: absolute; top: 10px; right: 10px;">Back</button>
+        </div>
+    </div>
+        <div id="storymiguel" class="fullscreen-div">
+            <div class="background-image">
+                <div class="centered-text">
+                    <h2>El viejoven burrito, la leyenda.</h2>
+                    En el pequeño y pintoresco pueblo de Lloseta, en la isla de Mallorca, vivía un joven llamado Miguel.
+                    Aunque tenía 25 años, su actitud y los dolores que lo acosaban lo hacían parecer un abuelo. Sin
+                    embargo, Miguel no era un abuelo cualquiera; era un informático talentoso que trabajaba para
+                    Travelgate, una de las empresas más innovadoras del sector turístico.
+
+                </br></br></br> Miguel tenía una personalidad vibrante que contrastaba con su sufrimiento físico. Sus amigos lo
+                    admiraban por su capacidad de mantener el espíritu alegre a pesar de los constantes achaques.
+                    Recientemente, había recibido la noticia de que tenía una hernia y decidió que era hora de empezar a
+                    hacer pilates para fortalecer su cuerpo y aliviar el dolor.
+
+                    Un invierno particularmente crudo se abatió sobre Lloseta. Los vientos fríos aullaban entre los
+                    callejones y las temperaturas caían a niveles nunca vistos. Miguel, con sus dolores que se
+                    intensificaban con el frío, sabía que debía encontrar una solución para protegerse.
+
+                </br></br></br>Una noche, mientras Miguel se calentaba al fuego de su chimenea, recordó una antigua leyenda que su
+                    abuelo le había contado: la historia de un joven que, para sobrevivir a un invierno implacable, se
+                    había envuelto en tantas capas de ropa que se convirtió en un burrito humano, cálido y a salvo del
+                    frío.
+
+                    Inspirado por la leyenda y con su habitual toque de humor, Miguel decidió hacer lo mismo. Rebuscó en
+                    su armario y comenzó a ponerse todas las prendas que tenía: camisetas de colores vivos, jerséis
+                    acogedores, bufandas, calcetines, guantes, gorros y abrigos. Capa tras capa, se fue envolviendo
+                    hasta que apenas podía moverse. Al mirarse al espejo, se dio cuenta de que, efectivamente, se había
+                    convertido en un burrito humano.
+
+                    El frío ya no podía alcanzarlo, y aunque sus movimientos eran torpes y lentos, Miguel sentía una
+                    calidez que no había experimentado en mucho tiempo. Se convirtió en una figura peculiar en Lloseta,
+                    paseando por las calles como un burrito abrigado, saludando a sus vecinos con una sonrisa.
+
+                </br></br></br>Con el tiempo, la historia de Miguel se convirtió en una leyenda local. Los niños escuchaban con
+                    asombro cómo el joven informático con alma de abuelo había encontrado una forma épica de combatir el
+                    frío. Miguel, ahora conocido como "El Burrito de Lloseta", demostró que, con ingenio, humor y
+                    determinación, uno puede enfrentar incluso los desafíos más fríos de la vida.
+
+                    Y así, Miguel no solo se protegió del frío, sino que también se ganó un lugar en los corazones y las
+                    historias de su querido pueblo. Además, con sus sesiones de pilates, comenzó a encontrar un nuevo
+                    equilibrio entre su cuerpo y su mente, demostrando que no hay obstáculo que no pueda superarse con
+                    la actitud adecuada.
+                </div>
+                <button class="backButton" style="position: absolute; top: 10px; right: 10px;">Back</button>
+            </div>
+            <!-- Include jQuery -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <!-- Custom jQuery script -->
+            <script src="js/script.js"></script>
+</body>
+
+</html>
