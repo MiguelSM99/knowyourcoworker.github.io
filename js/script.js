@@ -119,7 +119,7 @@ $(document).ready(function () {
       }).fadeIn(1000);
       currentQuestion = 1;
     } else {
-      $(".result").text("No lo conoces suficiente, inténtalo de nuevo");
+      $(".result").text("No lo conoces suficiente para desbloquearlo (Una o más respuestas mal), inténtalo de nuevo");
     }
   });
 
